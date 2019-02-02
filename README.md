@@ -1,0 +1,1 @@
+A marketplace website created in HTML5, CSS, PHP, SQL, JavaScript, jQuery, and AJAX. The website presents a simplified market system that trades food items through a marketplace. Vendors supply various food items to the marketplace, and customers procure food items from the marketplace and store them in their own pantries
