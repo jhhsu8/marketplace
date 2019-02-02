@@ -1,0 +1,308 @@
+body {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    background-color: #8d6142;
+}
+
+#container {
+    display: none;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+#content {
+    padding: 20px;
+}
+
+#outercircle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    padding: 5px; 
+    border-radius: 50%;
+    background: linear-gradient(red, yellow); 
+    animation: spin 2s linear infinite;
+}
+
+#innercircle { 
+    width: 60px; 
+    height: 60px; 
+    background: #8d6142;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
+
+img {
+    border-radius: 2px;
+}
+
+#header {
+    height: 100px;
+    padding-left: 20px;
+    color: #fff;
+    background-color: #003262;
+    background: url("../images/header.jpg");
+    background-repeat: no-repeat;  
+    background-size: cover;
+    padding: 20px;
+}
+
+.nav, #loginblock, #introblock, #slideshowblock, #block, #intro {
+    float: left;
+}
+
+.slide {
+    display: none;
+    animation-name: fade;
+    animation-duration: 1.5s;   
+}
+
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    } 
+    to {
+        opacity: 1;
+    }
+}
+
+#nav-wrapper, #navigation, #navbar {
+    height: 50px;
+    background-color: #333;
+}
+
+.nav {
+    padding: 0px 10px 0px 10px;
+    color: #fff;
+}
+
+#navigation > p > a, #navbar > p > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navigation > p > a:hover, #navbar > p > a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.sticky {
+  position: fixed;
+  width: 1300px;
+  left: 5;
+  top: 0;
+}
+
+h2 {
+    color: #3b5998;
+}
+
+hr {
+    border-top: 1px solid #d3d3d3;
+}
+
+#block {
+    width: 650px;
+}
+
+#vendorform, #itemform, #addform {
+    border-radius: 4px;
+    border: 1px solid #b6b6b6;
+    padding-left: 10px;
+    width: 650px;
+    margin-bottom: 10px;
+}
+
+#vendors > a {
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+    background-color: #3b5998;
+    text-decoration: none;
+}
+
+#vendors > a:hover {
+    background-color: #627aac;
+}
+
+#login, #logout, .contact, .forvendor {
+    float: right;
+    padding-right: 20px;
+}
+
+#intro {
+    width: 500px;
+}
+
+#foods {
+    float: right;
+}
+
+#userlogin {
+    color: #fff;
+}
+
+#loginblock {
+    margin-top: 15px;
+    width: 250px;
+    background-color: #3b5998;
+    color: #fff;
+    padding: 0px 10px 10px 10px;
+    border-radius: 2px;
+}
+
+#loginblock a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#loginblock a:hover {
+    text-decoration: underline;
+}
+
+#introblock {
+    width: 500px;
+    padding: 20px;
+}
+
+#slideshowblock {
+    text-align: center;
+    float: right;
+    position: relative;
+}
+
+.slide > div {
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+    float: left;
+    margin: 5px;
+}
+
+.vendorimage {
+    width: 450px;
+    height: 300px;
+    background-color: #000;
+}
+
+.button, #vendorimages {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#sidebar {
+    float: left;
+    width: 250px;
+}
+
+#sidebar p {
+    border: solid 1px #3b5998;
+    padding: 5px 5px 5px 10px;
+    width: 170px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#forms {
+    margin-left: 250px;
+}
+
+.section:not(:first-child){
+    display: none;
+}
+
+.active, #sidebar p:hover {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.instruction {
+    font-weight: bold;
+}
+
+.foodimage {
+    width: 150px;
+    height: 100px;
+}
+
+.cell {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    padding-top: 4px;
+    border-bottom: 1px solid #d0d0d0;  
+}
+
+.even-row-color {
+    background-color: #f8f8f8;
+}
+
+.odd-row-color {
+    background-color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#pantry {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit, .addsubmit, .minus, #addname, #additem, #addquantity, #contactsubmit, #registersubmit  {
+    border: none;
+    border-radius: 4px;
+    font-size: 95%;
+    padding: 3px 5px 3px 5px;
+    cursor: pointer;
+}
+
+.addsubmit, .minus, #addname, #additem, #addquantity, #contactsubmit, #registersubmit {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.addsubmit:hover, #addname:hover, #additem:hover, #addquantity:hover, #contactsubmit:hover, #registersubmit:hover {
+    background-color: #4e69a2;
+}
+
+.minus {
+    background-color: #cd5555;
+}
+
+.minus:hover {
+    background-color: #d26666;
+}
+
+.quantity, #search {
+    border: 1px solid #000;
+}
+
+.error {
+    color: #ff0000;
+}
+
+#footer {
+    color: #fff;
+    background-color: #333;
+    padding: 20px;
+    clear: both;
+}
+
+#footer p {
+    text-align: center;
+}
